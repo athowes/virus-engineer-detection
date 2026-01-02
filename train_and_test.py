@@ -39,7 +39,6 @@ def run_experiment(engineered_data_path="data/processed_engineered_virus.csv",
         original_data_path=original_data_path,
         split_filter='train',
         split_type=split_type,
-        random_substitution_only=random_substitution_only
     )
 
     print("\n2. Creating test dataset")
@@ -50,7 +49,6 @@ def run_experiment(engineered_data_path="data/processed_engineered_virus.csv",
         original_data_path=original_data_path,
         split_filter='test',
         split_type=split_type,
-        random_substitution_only=random_substitution_only
     )
 
     print("\n")
@@ -210,5 +208,4 @@ if __name__ == "__main__":
         n_samples=20_000,
         engineering_fraction=0.02,
         split_type='random',
-        # random_substitution_only=True
     )
